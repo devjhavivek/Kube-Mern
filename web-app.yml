@@ -32,9 +32,9 @@ spec:
                 key: mongo-password
           - name: ME_CONFIG_MONGODB_SERVER
             valueFrom: 
-              ConfigMapKeyRef:
+              configMapKeyRef:
                 name: mongo-config
-                key: mongo-url
+                key: mongo-url  
 
 ---
 apiVersion: v1
